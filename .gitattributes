@@ -1,2 +1,38 @@
 # Auto detect text files and perform LF normalization
 * text=auto
++game_paths = {
+    1: {
+        'red': 2,
+        'black': 3
+    },
+    2: {
+        'red': 3,
+        'black': 4
+    },
+    3: {
+        'red': 4,
+        'black': 5  
+    },
+    4: {
+        'red': 5,
+        'black': 6,
+    },
+    5: {
+        'red': 6,
+        'black': 7,
+    },
+    6: {
+        'black': 8
+    },
+    7: {
+        'red': 8,
+        'black': 9
+    },
+    8: {
+        'red': 9,
+        'black': random.choice([1, 2, 3, 4, 5])
+    }
+}
+
+actual_step = 1
+step_count = 1
